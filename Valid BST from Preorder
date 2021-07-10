@@ -6,7 +6,7 @@ public class Solution {
     return 1;
 
     while(c<A.length) 
-    {   // In below if(consition) they use the logic of PRE - ORDER!
+    {   // In below if(confusion) they use the logic of PRE - ORDER!
         // 1) ROOT can never be smaller than LEFT !
         // 2) LEFT never ever can be greater than RIGHT !
         // 3) ROOT is always smaller than RIGHT !
