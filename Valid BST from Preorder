@@ -2,7 +2,7 @@ public class Solution {
     public int solve(int[] A) {
         
     int a=0,b=1,c=2;
-    if(A.length<=2) // Confusion on Line 5,6 like how BST is always possible whose length is <=2 ???
+    if(A.length<=2) //       Confusion on Line 5,6 like how BST is always possible whose length is <=2 ??
     return 1;
 
     while(c<A.length) 
