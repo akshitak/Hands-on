@@ -39,7 +39,7 @@ class Solution{
 	     if(i==0 || j==0)
                 dp[i][j] = 1; // This condition sates ki agr Humari "1st Row" ya fir "1st Col" ho toh directly put "1"... ye alogrithm ki standard confition hai. 
 	     else
-		dp[i][j] = dp[i-1][j] +dp[i][j-1]; // ab jo hum each cell p jyege toh previous cells ki jo valus hogi unko add krke current cell ki calue lyege ....again 
+		dp[i][j] = dp[i-1][j] +dp[i][j-1]; // ab jo hum each cell p jyege toh previous cells ki jo value hogi unko add krke current cell ki value lyege ....again 
 		                                    //its standard conditon of Alogirthm ((_where we take 2D matrix and then solve it__))
 	   }
 	}
