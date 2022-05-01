@@ -1,4 +1,5 @@
-// THIS  IS  RECURSIONN SOLUTION !!!!
+Solution source - https://www.youtube.com/watch?v=rBAxUTqvlQA
+							// THIS  IS  RECURSIONN SOLUTION !!!!
 class Solution {
  
     //row -> m
@@ -26,19 +27,20 @@ class Solution {
 }
 
 
-// THIS IS USING DP APPROACH !!
+						// THIS IS USING DP APPROACH !!
 
 class Solution{
   int uniquePath(int m , int n)
-{	int dp[m][n];
+{	int dp[m][n];         // we use this  dynamic programming array[][] which is of same size as of i/p.
 	for(int i=0;i<m;i++)
 	{
 	  for(int j=0;j<n;j++)
 	   {
 	     if(i==0 || j==0)
-                dp[i][j] = 1;
+                dp[i][j] = 1; // This condition sates ki agr Humari "1st Row" ya fir "1st Col" ho toh directly put "1"... ye alogrithm ki standard confition hai. 
 	     else
-		dp[i][j] = dp[i-1][j] +dp[i][j-1];
+		dp[i][j] = dp[i-1][j] +dp[i][j-1]; // ab jo hum each cell p jyege toh previous cells ki jo valus hogi unko add krke current cell ki calue lyege ....again 
+		                                    //its standard conditon of Alogirthm ((_where we take 2D matrix and then solve it__))
 	   }
 	}
 	return dp[m-1][n-1];
