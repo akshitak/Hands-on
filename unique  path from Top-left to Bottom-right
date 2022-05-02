@@ -13,7 +13,7 @@ class Solution {
         // If diagonal movements are allowed then the last addition is required.
         
         //m-1  ----------> To moove right side!
-        //n-1  ----------> To move left side!
+        //n-1  ----------> To move down side!
         // m-1 & n-1 ----> To move diagonally!
         
         return numberOfPaths(m - 1, n) + numberOfPaths(m, n - 1);
