@@ -43,7 +43,7 @@ class Solution{
 		                                    //its standard conditon of Alogirthm ((_where we take 2D matrix and then solve it__))
 	   }
 	}
-	return dp[m-1][n-1];
+	return dp[m-1][n-1];		//return count of Last rows of Matrix...
 }
 }
 
